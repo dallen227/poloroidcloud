@@ -1,19 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+    <title>Polaroid Cloud</title>
+    <link rel="stylesheet" href="screen.css"
+    script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+        text-align:center;
+        margin:0;
+        padding:0;
+      }
+      .container{
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+      }
+      .logo{
+        font-size: 18px;
+        font-weight: bold;
+        text-align:left;
+      }
+      .hero-section h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 20 px 0;
+      }
+      .content h2{
+        font: size 24px;
+        font-weight: bold;
+      }
+      .features h2{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .features ul{
+        list-style: none;
+        padding: 0;
+      }
+      .features i {
+        margin-right: 10px;
+        color: #ff4b30;
+      }
+      .subscribe h2{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .subscribe-box{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .subscribe-box input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 60%;
+      }
+      .subscribe-box input{
+        padding: 10px;
+        border: 1px;
+        border-radius: 5px;
+        width: 60%;
+      }
+      .subscribe-box button {
+        padding: 10px 20px;
+        border: none;
+        background: #ff3b30;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+      }   
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h3 class="logo">Polaroid Cloud</h3>
+      <div class="hero-section">
+        <h1>FILM TO PHONE</h1>
+        <img src="polaroid-cloud.png" alt="Polaroid Camera">
+      </div>
+      <div class="content">
+        <h2>Any cloud, anytime.</h2>
+        <p>With Polaroid Cloud, you can sync your photos to your favorite cloud service while still enjoying the instant printing you've come to expect from Polaroid. Using our special instant photo paper, your image is uploaded to the web and a QR code is generated and printed with the instant photo. Perfect for sharing with your friends and family.</p>
+      </div>
+      <div class="features">
+        <h2>Easy,cheesy!</h2>
+        <ul>
+          <li><i class="fas fa-wifi"></i> Connect your Polaroid to a WiFi netowrk</li>
+          <li><i class="fas fa-cloud"></i> Configure your favorite cloud</li>
+          <li><i class="fas fa-wifi"></i> Point, shoot, and print your QR-tagged photo</li>
+          <li><i class="fas fa-wifi"></i> Share your physical and digital photos with friends and family</li>
+        </ul>
+      </div>
+      <div class="subscribe">
+        <h2>Be the first to know.</h2>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Enter your email address to receive updates">
+          <button>KEEP IN TOUCH</button>
+        </div>
+      </div>
+    </div>
+</body>
 </html>
